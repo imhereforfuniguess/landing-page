@@ -2,9 +2,15 @@
     font-family: sans-serif;
     margin: 0 0 10px;
 }
+.header_panel,
+.awesome_panel
+{
+    background-color: #1f2937;
+    color: white;
+}
 
 div{
-    padding: 0 200px 0 200px;
+    padding: 0px 200px ;
 }
 
 a{
@@ -12,12 +18,7 @@ a{
     text-decoration: none;
 }
 
-.header_panel,
-.awesome_panel
-{
-    background-color: #1f2937;
-    color: white;
-}
+
 
 .header_panel{
     height: 40px;
@@ -47,13 +48,25 @@ a{
     margin-top: 0px;
     height: 400px;
     display: flex;
-    padding: 10px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.awesome_panel div{
+    flex: 1;
+    padding: 0;
+}
+
+.awesome_panel img{
+    flex: 1;
 }
 
 .awesome_panel h1{
     font-size: 48px;
     font-weight: 900;
 }
+
+
 
 .awesome_panel p{
     color: #e5e7eb;
@@ -68,4 +81,14 @@ a{
 
 .call_panel{
     background-color: #3882f6;
+}
+
+button{
+    border-radius: 10px;
+    background-color: #3882f6;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 6px 30px;
+
 }
