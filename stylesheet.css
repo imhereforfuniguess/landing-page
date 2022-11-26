@@ -1,0 +1,14 @@
+*{
+    font-family: sans-serif;
+}
+
+a{
+    color: lightgrey;
+}
+
+.header,
+.awesome
+{
+    background-color: #1f2937;
+    color: white;
+}
