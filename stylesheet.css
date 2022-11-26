@@ -2,6 +2,15 @@
     font-family: sans-serif;
     margin: 0 0 10px;
 }
+
+html{
+    margin-bottom: 0;
+}
+
+
+body{
+    margin: 0;
+}
 .header_panel,
 .awesome_panel
 {
@@ -21,20 +30,19 @@ a{
 
 
 .header_panel{
-    height: 40px;
+    height: 100px;
     display: flex;
     margin-bottom: 0px;
+    align-items: center;
 }
 
 .header_panel h3{
-    flex: 1;
-    justify-content: center;
+    flex: 1.2;
     padding: 10px;
 }
 
 .header_panel a{
     flex: 1;
-    justify-content: center;
     padding: 10px;
 }
 
@@ -46,19 +54,27 @@ a{
 
 .awesome_panel{
     margin-top: 0px;
-    height: 400px;
+    height: 300px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
     padding-top: 100px;
     padding-bottom: 100px;
+
 }
 
 .awesome_panel div{
     flex: 1;
     padding: 0;
+    height: 250px;
+    width: auto;
 }
 
 .awesome_panel img{
     flex: 1;
+    height: 250px;
+    width: auto;
 }
 
 .awesome_panel h1{
@@ -67,21 +83,79 @@ a{
 }
 
 
-
-.awesome_panel p{
+.grey_text,
+a{
     color: #e5e7eb;
     font-size: 18px;
 }
 
+.information_panel{
+    display: flex;
+    flex-direction: column;
+    padding: 70px 0;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+h2{
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+    padding: 50px 0;
+    flex: 1;
+}
+
+.information_panel_div{
+    flex: 1;
+    display: flex;
+    justify-content:space-around;
+    height: 300px;
+    flex-wrap: wrap;
+    word-wrap: break-word; 
+}
+
+/* Text under pictures */
+.information_panel_div p{
+    margin-top: 190px;
+}
+
+
+.blue_border{
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #3882f6;
+    border-width: px;
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    padding: 20px;
+}
+
+
 .quote_panel{
+    padding: 100px 400px;
     background-color: #e5e7eb;
     font-style: italic;
     font-size: 36px;
 }
 
-.call_panel{
-    background-color: #3882f6;
+.quote_text{
+    font-size: 36px;
+    color: #1f2937;
+    font-style: italic;
+    font-weight: 100;
 }
+
+.quote_author{
+    text-align: right;
+    font-weight: 900;
+}
+
+.call_panel_surround{
+    margin: 100px 40px;
+}
+
+
 
 button{
     border-radius: 10px;
@@ -90,5 +164,43 @@ button{
     font-size: 20px;
     font-weight: 600;
     padding: 6px 30px;
+    margin: 0;
+}
 
+.call_to_action{
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+}
+
+.call_panel{
+    background-color: #3882f6;
+    border-radius: 10px;
+    padding: 50px 100px;
+    display: flex;
+}
+
+.call_panel_call{
+    flex: 4;
+    padding: 0;
+    margin: 0;
+}
+
+.call_panel_button_holder{
+    display: flex;
+    flex: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.call_panel_button{
+    flex: 1;
+    border-color: white;
+}
+
+.footer{
+    padding: 50px;
+    background-color: #1f2937;  
+    text-align: center;
+    margin: 0;
 }
